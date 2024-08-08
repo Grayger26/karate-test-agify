@@ -5,7 +5,7 @@ Feature: Age Prediction
 
     # Send GET request
     Given url 'https://api.agify.io'
-    And param name = name
+    And param name = '<name>'
     When method get
     Then status 200
     And match response == { count: '#number', name: '#string', age: '#number' }
