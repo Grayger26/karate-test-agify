@@ -12,9 +12,7 @@ Feature: Age prediction v2
     Then status 200
     And match response == { count: '#number', name: '#string', age: '#number' }
     * def expectedAge = expectedAges[name]
-    * def actualAge = response.age
-    * def errorMessage = 'Error. Expected value: ' + expectedAge + ', Actual value: ' + actualAge
-    * if (actualAge != expectedAge) karate.fail(errorMessage)
+    * match response.age == expectedAge
 
     Examples:
       | name    |
