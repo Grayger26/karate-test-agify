@@ -1,7 +1,5 @@
 Feature: Age prediction v2
 
-  Background:
-    * def expectedAges = { caren: 40, george: 85, john: 73 }
 
   Scenario Outline: Validate predicted age for name - <name>
 

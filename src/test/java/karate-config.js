@@ -6,7 +6,11 @@ function fn() {
   }
   var config = {
     env: env,
-    myVarName: 'someValue'
+    expectedAges: {
+        caren: 40,
+        george: 85,
+        john: 73
+      }
   }
   if (env == 'dev') {
     // customize
