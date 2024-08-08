@@ -1,7 +1,7 @@
 Feature: Age Prediction
 
 
-  Scenario Outline: Verify the predicted age for different names
+  Scenario Outline: Verify the predicted age for different names - <name>
 
     # Send GET request
     Given url 'https://api.agify.io'
